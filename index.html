@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang=pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js" defer></script>
+    <script src="base64.js" defer></script>
+    <script src="cifraDeCesar.js"></script>
 </head>
+
 <body>
+    <!-- /* Corpo Principal da Página: Criptografia de strings */ -->
     <main>
-        <div>
-            <h1>Decodificador Cifra de César</h1>
-            <input type="text" name="Traduza Aqui">
+        <div id="principal">
+            <h1>Criptografador</h1>
+                        <!-- Caixas de entrada e saída de texto, respectivamente -->
+            <textarea id="texto" cols="30" rows="10">Escreva Aqui</textarea>
+            <textarea id="retorno" cols="30" rows="10"></textarea>
+
+
+            <select name="código" id="codigo">
+                <option value="Base64">Base64</option>
+                <option value="Cifra de César">Cifra de César</option>
+            </select>
+
+            <legend>Codificar<input id="codificar" type="radio" name="soUm" checked></legend>
+            <legend>Decodificar<input id="decodificar" type="radio" name="soUm"></legend>
+            <button id="botao">Codificar Mensagem</button>
+
         </div>
     </main>
 </body>
+
 </html>
