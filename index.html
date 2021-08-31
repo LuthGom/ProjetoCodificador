@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="index.css">
+    <!-- <script src="base64.js" defer></script> -->
     <script src="base64.js" defer></script>
-    <script src="cifraDeCesar.js"></script>
 </head>
 
 <body>
@@ -22,13 +22,14 @@
 
 
             <select name="código" id="codigo">
-                <option value="Base64">Base64</option>
-                <option value="Cifra de César">Cifra de César</option>
+                <option value="1">Base64</option>
+                <option value="2">Cifra de César</option>
             </select>
 
             <legend>Codificar<input id="codificar" type="radio" name="soUm" checked></legend>
             <legend>Decodificar<input id="decodificar" type="radio" name="soUm"></legend>
             <button id="botao">Codificar Mensagem</button>
+            <input type="number"  id="chave" >
 
         </div>
     </main>
