@@ -1,8 +1,0 @@
-A codificação em base64 é uma fomra de converter textos ao utilizar 64 caracteres.
-Muito sites utilizam esse tipo de aplicação para ocultar dados na URL em trocas de páginas.
-Vantagens de usar:
-    - converter caracteres que geram problemas de URL
-    - atrapalhar pessoas de ficarem chutando ids nas páginas
-    - transferir dados binários codificados em base64.
-
-O JS já possui dois métodos para codificar e decodificar a base64

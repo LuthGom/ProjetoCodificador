@@ -6,33 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/passRomano.css">
     <!-- <script src="base64.js" defer></script> -->
-    <script src="base64.js" defer></script>
+    <script src="/js/passRomano.js" defer></script>
 </head>
 
 <body>
+    <header>
+         <h1>Criptografador</h1>
+    </header>
     <!-- /* Corpo Principal da Página: Criptografia de strings */ -->
     <main>
         <div id="principal">
-            <h1>Criptografador</h1>
-                        <!-- Caixas de entrada e saída de texto, respectivamente -->
-            <textarea id="texto" cols="30" rows="10">Escreva Aqui</textarea>
-            <textarea id="retorno" cols="30" rows="10"></textarea>
+           
+            <!-- Caixas de entrada e saída de texto, respectivamente -->
+            <div class="box">
+                <textarea id="texto" cols="30" rows="10">  Escreva Aqui</textarea>
 
-
+                <textarea id="retorno" cols="30" rows="10">  </textarea>
+            </div>
             <select name="código" id="codigo">
-                <option value="1">Base64</option>
                 <option value="2">Cifra de César</option>
+                <option value="1">Base64</option>
             </select>
-
+            <legend id="chaveLegenda">Chave <input type="number" id="chave"></legend>
             <legend>Codificar<input id="codificar" type="radio" name="soUm" checked></legend>
             <legend>Decodificar<input id="decodificar" type="radio" name="soUm"></legend>
             <button id="botao">Codificar Mensagem</button>
-            <input type="number"  id="chave" >
+            
 
         </div>
     </main>
+
+    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,68 @@
+body {
+    background-image: url(muroDeCodigo.gif);
+    background-size: 50%;
+    /* height: 100vh; */
+}
+h1 {
+    color: white;
+    font-size: 5em;
+    margin: 2px;
+    padding: 0;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#texto, #retorno {
+    width: 30em;
+    border: 2px dotted white;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px;
+    background-color:cornflowerblue;
+    font-size: 13px;
+}
+#texto, #retorno:hover {
+    cursor: pointer;
+}
+legend {
+    color: white;
+    margin: 10px;
+    font-size: 1.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+input:hover {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+button {
+    margin: 15px;
+    color: blue;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button:hover {
+    cursor: pointer;
+    background-color: blue;
+    color:white;
+}

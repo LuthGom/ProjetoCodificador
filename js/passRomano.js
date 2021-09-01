@@ -17,8 +17,11 @@ let decodificar = document.querySelector('#decodificar')
 let divao = document.querySelector('div')
 // variavel para captar a caixa de seleção
 let selecao = document.querySelector('#codigo')
+// variavel para captar o input de número
 let chaveDeCodigo = document.querySelector('#chave')
-
+// variável para captar a legenda do input de numero
+let legenda = document.querySelector('#chaveLegenda')
+let divinho = document.querySelector('#box')
 // evento que altera o valor do botão para 'Codificar Mensagem'
 codificar.addEventListener('click', function () {
     botao.textContent = 'Codificar Mensagem'
@@ -31,6 +34,7 @@ decodificar.addEventListener('click', function () {
 botao.addEventListener('click', function () {
     //caso atenda aos parametros, codifica com Base64
     if (selecao.value === '1' && botao.textContent === 'Codificar Mensagem') {
+       
         textodeSaida.value = btoa(textoDeEntrada.value)
     }
     //caso atenda aos parametros, decodifica com BAse64
@@ -50,7 +54,16 @@ botao.addEventListener('click', function () {
     }
    
 })
-
+selecao.addEventListener ('click', function() {
+    if (selecao.value === '1') {
+        chaveDeCodigo.style.display = 'none'
+        legenda.style.display = 'none'
+    }
+    else {
+        chaveDeCodigo.style.display = 'flex'
+        legenda.style.display = 'flex'
+    }
+})
 
 
 function codCifra(string, chave) {
